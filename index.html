@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Coronavirus Data by Borough</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="heading">
+        <div class="container">
+            <h1 class="title">NYC Coronavirus Data by Borough</h1>
+        </div>
+    </section>
+    <section id="charts">
+        <div class="container">
+            <div id="data"></div>
+            <div id="chartContainer" class="chart"></div>
+            <p class="selector">
+                Choose a datatype: 
+                <select id="dataType">
+                </select>
+            </p>       
+        </div>
+    </section>
+    <section id="refresh">
+        <div class="container">
+            <div id="updateResult"></div>
+            <button class="refreshButton" onclick="updateData()">Refresh Data</button>
+            <p class="notes">Note: <br> The Github Repository Collaborator update the data once a day, around 1pm EST. Changes may not be reflected on this page. <br> This page updates the data when current time is 1:00PM or when page loads or button is clicked. <br> </p>
+        </div>
+    </section>
+    <footer>
+        <div class="disclaimer">
+            <h4>Disclaimer:</h4>
+            <p></p>
+            <p>The sum of counts may not match values in citywide tables because of records with missing geographic information. The graphs does not contain information on probable deaths.</p>
+        </div>
+        <div>
+            <h4>Source:</h4>
+            <p><a href="https://github.com/nychealth/coronavirus-data/blob/master/totals/by-boro.csv" class="link">https://github.com/nychealth/coronavirus-data/blob/master/totals/by-boro.csv</a></p>
+        </div>
+    </footer>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./function.js"></script>
+</body>
+</html>

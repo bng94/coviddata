@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+  scroll-behavior: smooth;
+  color: #212529;
+  text-align: center;
+  background-color: #f1dec6;
+}
+
+section {
+  padding: 10px 0;
+}
+
+#data {
+  padding-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.total {
+  font-size: 1.5rem;
+}
+
+.selector {
+  padding: 15px;
+}
+.container {
+  padding: 0 5px;
+}
+
+.chart {
+  height: 370px;
+  width: 100%;
+}
+
+.refreshButton {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00a6ff;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 100;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 2px 2px 5px #afe9ff;
+  box-shadow: 2px 2px 5px #afe9ff;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+select {
+  outline: none;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.disclaimer {
+  padding-bottom: 10px;
+}
+
+.disclaimer p {
+  padding: 2px 0;
+}
+
+.link:link,
+.link:visited {
+  color: #0000b6;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0000b6;
+  text-decoration: underline;
+}
+
+.notes {
+  padding: 0 100px;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .notes {
+    padding: 0 10px;
+  }
+}
